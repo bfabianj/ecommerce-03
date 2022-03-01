@@ -1,0 +1,139 @@
+.section-add {
+    &__header{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        text-decoration: underline;
+        padding: .1em;
+
+        &-content{
+            text-align: center;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        margin: .5em auto .3em;
+
+        &__chk{
+            margin: auto;
+        }
+        &__label{
+            text-align: left;
+            padding: .5em;
+            letter-spacing: .5em;
+        }
+
+        &__input{
+            width: 70%;
+            align-self: center;
+            padding: 0 1em;
+            height: 3em;
+            border-radius: 1em;
+
+            &-select{
+                width: 70%;
+                align-self: center;
+                padding: .5em;
+                height: 10em;
+                border-radius: 1em;
+            }
+
+        }
+
+        &__textarea{
+            resize: none;
+            height: 10em;
+            width: 70%;
+
+            align-self: center;
+            margin-top: 2em;
+            padding: 1em;
+            border-radius: 1em;
+        }
+
+        &__btn{
+            margin: auto;
+            width: 50%;
+            text-align: center;
+
+            &-submit,
+            &-reset{
+                color:white;
+                padding: 1em;
+                width: 40%;
+                align-self: center;
+                border-radius: 15px;
+                margin: 1em;
+                margin-top: 1em;
+                letter-spacing: .1em;
+                border: 0 3px 3px 0 black solid;
+            }
+
+            &-submit{
+                background-color: #BABACC;
+            }
+
+            &-reset{
+                background-color: #E72E60;
+            }
+
+            &-submit:hover,
+            &-reset:hover{
+            background-color: gold;
+            color: black;
+            }
+        }
+    }
+
+    table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        color: white;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td{
+        padding: 5px;
+    }
+
+    #drop-area{
+        border: 2px dashed #ccc;
+        border-radius: 20px;
+        width: 500px;
+        margin: 25px 0;
+        padding: 20px;
+    }
+
+    .button{
+        display: inline-block;
+        padding: 10px;
+        background: #ccc;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+
+    }
+
+    #foto{
+        display: none;
+    }
+
+    #gallery img{
+        width: 100px;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+
+    #drop-area.highlight{
+        border-color: purple;
+        
+    }
+
+}

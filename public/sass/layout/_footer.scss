@@ -1,0 +1,18 @@
+.main-footer{
+    background-color: #211e5f;
+    display: grid;
+    grid-template-columns:min-content auto;
+}
+
+.footer__logo{
+    height: 3em;
+    width: 3em;
+}
+
+.footer__copyright{
+    margin: auto;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+}
+

@@ -1,0 +1,112 @@
+<section class="section-add">
+    <div class="section-add__header">
+        <h1> Alta </h1>
+    </div>
+    <div class="section-add__header-content">
+        <p>Nuevos productos:</p>
+        <p>(*: campo obligatorio.)</p>
+    </div>
+
+    <div class="section-add__container">
+        <form class="section-add-form" action="add.html" method="post" enctype="multipart/form-data" autocomplete="off" >
+
+            <div class="section-add-form">
+                <label class="section-add-form__label" for="name">Nombre*:</label>
+                <input class="section-add-form__input"
+                    id="name" name="nombre"
+                    placeholder="Ej: Vuelta al Muelle"
+                >
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="section-add-form">
+                <label class="section-add-form__label" for="precio">Precio:</label>
+                <input class="section-add-form__input" type="text"
+                    id="precio" name="precio"
+                >
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="section-add-form">
+                <label class="section-add-form__label" for="stock">Stock:</label>
+                <input class="section-add-form__input" type="text"
+                    id="stock" name="stock"
+                >
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="section-add-form">
+                <label class="section-add-form__label" for="marca">Marca:</label>
+                <select class="section-add-form__input" name="marca" id="marca">
+                    <option value="">Seleccioná una marca</option>
+                    <option value="101">Megaciclo</option>
+                    <option value="102">Aguas Abiertas TW</option>
+                    <option value="103">Escuela de Triatlón</option>
+                </select>
+            </div>
+            <div class="section-add-form">
+                <label class="section-add-form__label" for="categoria">Categoría:</label>
+                <select class="section-add-form__input-select" id="categoria" name="categoria" required size="5">
+                    <optgroup label="Pruebas Simples">
+                        <option value="01">Apnea</option>
+                        <option value="02" selected>Natación</option>
+                        <option value="03">Kayac</option>
+                        <option value="04">Buceo</option>
+                    </optgroup>
+                    <optgroup label="Pruebas Combinadas">
+                        <option value="11">Natatlón</option>
+                        <option value="12">Pentatlón</option>
+                        <option value="13">Triatlón</option>
+                    </optgroup>
+                </select>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="section-add-form">
+                <label class="section-add-form__label" for="detalles">Detalles:</label>
+                <textarea class="section-add-form__textarea"
+                placeholder="Por ej: Carrera de Natación. Distancias."
+                id="detalles" name="detalles"
+                >
+            </textarea>
+            <div class="error-detail"></div>
+
+<!--        <div class="section-add-form">
+                <label class="section-add-form__label" for="foto">Foto:</label>
+                <input class="section-add-form__input" type="text" name="foto" id="foto">
+                <div class="error-detail"></div>
+            </div>
+-->
+
+            <div id="drop-area">
+                <p>Subir imagen al servidor con <b>file dialog</b> o con <b>drag and drop</b> dentro del área punteada</p>
+                <br>
+                <input type="file" id="foto" accept="imagen/*" onchange="handleFiles(this.files)" >
+                <label for="foto" class="button">File dialog</label>
+                <br><br>
+
+                <progress id="progress-bar" max="100" value="0"></progress>
+                <div id="gallery"><img src="" alt=""></div>
+            </div>
+            <div class="section-add-form">
+                <input class="section-add-form__input-chk" type="checkbox" name="envio-sin-cargo" id="envio-sin-cargo" value="si" checked>
+                <label class="section-add-form__label-chk" for="envio-sin-cargo">Envío sin cargo</label>
+            </div>
+
+            <div class="section-add-form">
+                <button class="section-add-form__btn-submit">Agregar</button>
+                <!-- <input class="section-add-form__btn-reset" type="reset"> -->
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Lista de productos disponibles</h2>
+    <br>
+
+    <div class="listado-productos"></div>
+
+</section>

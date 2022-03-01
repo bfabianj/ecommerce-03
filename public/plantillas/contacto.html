@@ -1,0 +1,18 @@
+<section class="section-contacto">
+    <div class="section-contacto__header">
+        <h1>Contacto</h1>
+    </div>
+     <div class="section-contacto__header-content">
+        <p>Envíenos su consulta completando los siguientes datos:</p>
+    </div>
+    <form class="section-contacto-form">
+            <label class="section-contacto-form__label" for="nombre">Nombre:*</label >
+            <input class="section-contacto-form__input" id="nombre" name="name">
+            <label class="section-contacto-form__label" for="apel">Apellido:*</label>
+            <input class="section-contacto-form__input" id="apel" name="surname"
+                required minlength="2" maxlength="50">
+            <textarea class="section-contacto-form__textarea" placeholder="Inserte su consulta" id="comments" name="comments"></textarea>
+            <p>*: campo obligatorio.</p>
+            <input class="section-contacto-form__submit" type="submit">
+            </form>
+</section>

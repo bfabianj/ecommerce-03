@@ -1,0 +1,176 @@
+/**************************
+        HEADER
+**************************/
+.main-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #211E5F;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        & {
+        flex-direction: column-reverse;
+        }
+    }
+
+}
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toggle__label{
+        background-color: #f1f2f3;
+    }
+}
+
+/**************************
+        NAV BAR
+**************************/
+.nav-bar {
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: right;
+
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+    &__nav-item {
+        text-align: center;
+        background-color: pink;
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: #211E5F;
+        border: .5em solid #211E5F;
+
+        color: #fff;
+        padding: 1em 2em;
+        text-decoration: none;
+    }
+
+    &__nav-link:hover{
+        border-bottom: .3em solid #fff;
+    }
+    @media (max-width: 768px) {
+        & {
+            display: none;
+        }
+    }
+}
+
+/**************************
+        SEARCH BAR
+**************************/
+.search-bar {
+    background-color: #211E5F;
+    display: flex;
+    justify-content: left;
+
+    &__logo-container,
+    &__form-container {
+        padding: 1em;
+    }
+
+    &__logo {
+        background-position: center;
+        background-size: contain;
+        height: 3em;
+    }
+
+    &__form-container {
+        background-color: #211E5F;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        margin: auto;
+        width: 30em;
+    }
+
+    &__form-label {
+        display: none;
+    }
+
+    &__form-search {
+        background-color: #fff;
+        width: 70%;
+        border-radius: 1em;
+        padding-left: 1em;
+        border: none;
+    }
+
+    &__form-submit {
+        background-color: #211E5F;
+        color: #fff;
+        margin-left: 1em;
+    }
+
+    &__carrito-container {
+        flex: 0 0 3em; /*flex-grow, flex-shrink, flex-basis */
+        color: white;
+        margin: auto;
+        padding: .5em;
+        cursor: pointer;
+}
+
+/**************************
+        MENU TOGGLE
+**************************/
+.menu-toggle {
+    display: none;
+    background-color: #211E5F;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        display: block;
+        border: .1em solid white;
+        border-radius: .2em;
+        background-color: #211E5F;
+        height: 100%;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: rgb(179, 178, 178);
+        height: 0.2em;
+        position: absolute;
+        left: 0.5em;
+        right: 0.5em;
+    }
+
+    &__top-bread {
+        top: 0.8em;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -0.1em;
+    }
+
+    &__bottom-bread {
+        bottom: 0.8em;
+    }
+
+    @media (max-width: 768px) {
+            & {
+            display: block;
+            }
+        }
+    }
+}

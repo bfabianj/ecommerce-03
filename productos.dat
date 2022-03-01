@@ -1,0 +1,46 @@
+[
+	{
+		"nombre": "Escuadra",
+		"precio": "12",
+		"stock": "34",
+		"marca": "Pizzini",
+		"categoria": "Educación",
+		"detalles": "Plástico",
+		"foto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+		"envio": true,
+		"id": "2"
+	},
+	{
+		"nombre": "Reloj",
+		"precio": "2342",
+		"stock": "34",
+		"marca": "Seiko",
+		"categoria": "Hogar",
+		"detalles": "Analógico Celeste",
+		"foto": "https://cdn3.iconfinder.com/data/icons/education-209/64/clock-stopwatch-timer-time-256.png",
+		"envio": true,
+		"id": "3"
+	},
+	{
+		"nombre": "Lápiz",
+		"precio": "33",
+		"stock": "789",
+		"marca": "Fabber",
+		"categoria": "educación",
+		"detalles": "grafito negro",
+		"foto": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-128.png",
+		"envio": false,
+		"id": "5"
+	},
+	{
+		"nombre": "Pizarrón",
+		"precio": "2334",
+		"stock": "23",
+		"marca": "Pizzini",
+		"categoria": "Educación",
+		"detalles": "Tamaño grande, a marcador",
+		"foto": "https://cdn3.iconfinder.com/data/icons/education-209/64/board-math-class-school-128.png",
+		"envio": true,
+		"id": "6"
+	}
+]

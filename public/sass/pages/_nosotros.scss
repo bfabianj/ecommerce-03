@@ -1,0 +1,41 @@
+.section-nosotros{
+    &__header{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        padding: 1em;
+        text-decoration: underline;
+
+            &-content{
+                width: 70%;
+                margin: 0 auto 1em;
+                text-indent: 5em;
+                line-height: 2em;
+            }
+    }
+
+    &__title{
+        width: 70%;
+        margin: auto;
+        background-color: #211E5F;
+        color:white;
+
+        border: .1em solid black;
+        border-radius: 1em 1em 0 0;
+        text-align: center;
+        padding: 1em;
+        text-decoration: underline;
+
+    }
+
+    &__content{
+        width: 70%;
+        margin: 0 auto 1em;
+
+        border-radius: 0 0 1em 1em;
+        border: .1em solid black;
+        background-color: white;
+        text-align: justify;
+        padding: 1em;
+    }
+}
