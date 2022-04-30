@@ -1,6 +1,6 @@
-import config from "../config.js"
+import config from '../config.js'
 
-import CarritoModel from "../model/carrito.js"
+import CarritoModel from '../model/carrito.js'
 
 const model = CarritoModel.get(config.TIPO_DE_PERSISTENCIA)
 

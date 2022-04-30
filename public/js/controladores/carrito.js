@@ -40,9 +40,11 @@ class CarritoController{
 
         // Envío del Carrito al BackEnd
         elemSectionCarrito.innerHTML = '<h2> Enviando Carrito...</h2>'
-        
         //console.log('Enviando Carrito!')
-        await carritoService.guardarCarrito(carritoModel.obtener())
+
+        let preference = await carritoService.guardarCarrito(carritoModel.obtener())
+        console.log(preference)
+
         //console.log('Envío OK!')
         elemSectionCarrito.innerHTML = '<h2> Enviando Carrito...<b>OK!</b></h2>'
 
@@ -51,10 +53,12 @@ class CarritoController{
         localStorage.setItem('carrito', carritoModel.obtener())
 
         // Cierro la ventana del Carrito un tiempo después
-        setTimeout(() => {
+        setTimeout(async () => {
             elemSectionCarrito.classList.remove('section-carrito--visible')
             mostrarCarrito = false
-        }, 1500)
+
+            await renderPago(preference)
+        }, 0)
     }
 }
 

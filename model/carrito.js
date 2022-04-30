@@ -10,9 +10,7 @@ class CarritoModel{
             default:
                 console.log('**** Persistencia Default (en Memoria) (carrito) ****')
                 return new CarritoModelMongoDB()
-
-            }
-
+        }
     }
 }
 

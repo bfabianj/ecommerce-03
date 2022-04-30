@@ -172,7 +172,7 @@ body {
   right: 0;
   bottom: 0;
   /*          background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);*/
-  background: linear-gradient(135deg, #ecf4f9, #ecf0f9);
+  background: linear-gradient(135deg, #ecf4f9, hsl(222deg, 50%, 95%));
   opacity: 0.25;
   z-index: -1;
 }
@@ -190,7 +190,7 @@ body {
   padding: 0 2em;
 }
 .card__content .button {
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  background: linear-gradient(135deg, #1a9be6, hsl(222deg, 80%, 50%));
 }
 .card__content .button:before {
   box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
@@ -203,7 +203,7 @@ body {
   transform: rotateY(180deg);
 }
 .card:nth-child(even) .card__content .button {
-  background: linear-gradient(135deg, #e61a80, #e61a3c);
+  background: linear-gradient(135deg, #e61a80, hsl(350deg, 80%, 50%));
 }
 .card:nth-child(even) .card__content .button:before {
   box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
@@ -376,7 +376,7 @@ body {
 }
 .search-bar .menu-toggle__top-bread, .search-bar .menu-toggle__meat, .search-bar .menu-toggle__bottom-bread {
   display: block;
-  background-color: #b3b2b2;
+  background-color: rgb(179, 178, 178);
   height: 0.2em;
   position: absolute;
   left: 0.5em;
@@ -670,7 +670,7 @@ body {
   left: 150px;
   right: 150px;
   bottom: 150px;
-  box-shadow: 0.3em 0.3em 10em 0.3em black;
+  box-shadow: 0.3em 0.3em 10em 0.3em rgb(0, 0, 0);
 }
 .section-carrito--visible {
   display: block;
@@ -694,4 +694,133 @@ body {
   height: 35px;
   font-size: 1.1em;
   font-weight: bold;
+}
+
+/* Checkout Payment Section - Start */
+.container_payment {
+  display: block;
+}
+
+.payment-form {
+  padding-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.payment-form.dark {
+  background-color: #f6f6f6;
+}
+
+.payment-form .content {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  background-color: white;
+}
+
+.payment-form .block-heading {
+  padding-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.payment-form .block-heading p {
+  text-align: center;
+  max-width: 420px;
+  margin: auto;
+  color: RGBA(0, 0, 0, 0.45);
+}
+
+.payment-form .block-heading h1,
+.payment-form .block-heading h2,
+.payment-form .block-heading h3 {
+  margin-bottom: 1.2rem;
+  color: #009EE3;
+}
+
+.payment-form .form-payment {
+  border-top: 2px solid #C6E9FA;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  background-color: #ffffff;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.payment-form .title {
+  font-size: 1.3em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.8em;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.payment-form .products {
+  background-color: #f7fbff;
+  padding: 25px;
+}
+
+.payment-form .products .item {
+  margin-bottom: 1em;
+}
+
+.payment-form .products .item-name {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.payment-form .products .item p {
+  margin-bottom: 0.2em;
+}
+
+.payment-form .products .price {
+  float: right;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.payment-form .products .total {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  padding-top: 19px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.payment-form .payment-details {
+  padding: 25px 25px 15px;
+  height: 100%;
+}
+
+.payment-form .payment-details label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #8C8C8C;
+  text-transform: uppercase;
+}
+
+.payment-form button {
+  margin-top: 0.6em;
+  padding: 12px 0;
+  font-weight: 500;
+  background-color: #009EE3;
+  margin-bottom: 10px;
+}
+
+.payment-form .mercadopago-button {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.payment-form a, .payment-form a:not([href]) {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #009ee3;
+  cursor: pointer;
+}
+
+.payment-form a:not([href]):hover {
+  color: #3483FA;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

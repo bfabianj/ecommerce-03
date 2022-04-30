@@ -23,7 +23,6 @@ const algunCampoNoValido = () => {
     return !valido
 }
 
-
 const setCustomValidity = function (mensaje, index) {
     const errorDivs = document.querySelectorAll('div.error-detail')
     errorDivs[index].innerHTML = mensaje
